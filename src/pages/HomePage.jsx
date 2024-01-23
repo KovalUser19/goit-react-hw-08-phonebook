@@ -7,13 +7,16 @@ const styles = {
   title: {
     fontSize: 50,
     textAlign: 'center',
+    color: 'blue',
+     whiteSpace: 'preWrap',
   }
 }
 const HomePage = () => {
   return (
     <div style={styles.container}>
       <h1 style={styles.title}>
-        Task manager welcome page{' '}
+        Welcome to my page!<br/>
+        To enter, please register!
       </h1>
     </div>
   );

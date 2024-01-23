@@ -1,0 +1,5 @@
+.link:active,
+.link:hover {
+  color: #e84a7c;
+  font-size: 25px;
+}
