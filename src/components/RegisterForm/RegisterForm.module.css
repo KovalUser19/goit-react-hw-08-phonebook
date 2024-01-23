@@ -1,7 +1,9 @@
 .form {
-  width: 360px;
-  margin-left: 30px;
-  border: 1x solid rgb(131, 34, 34);
+  width: 460px;
+  box-shadow: 0 0 5px rgba(77, 72, 72, 0.5);
+  padding: 50px;
+  margin:0 auto;
+  border-radius: 10px;
 }
 
 .label {
