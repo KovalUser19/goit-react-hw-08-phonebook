@@ -7,7 +7,7 @@ const styles = {
   title: {
     fontSize: 50,
     textAlign: 'center',
-    color: 'blue',
+    color: 'lightBlue',
      whiteSpace: 'preWrap',
   }
 }

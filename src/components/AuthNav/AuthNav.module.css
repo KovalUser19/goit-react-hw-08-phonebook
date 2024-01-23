@@ -1,18 +1,21 @@
-/* link {
-  display: inline-block;
+.link {
+   display: inline-block;
   text-decoration: none;
   padding: 12px;
   font-weight: 700;
   color: #2a363b;
-}*/
-
-.link:active,
-.link:hover {
-  color: #e84a7c;
-  font-size: 25px;
+}
+ .link:active,
+ .link:hover,
+ .link:focus {
+  color: #4b77c5;
 }
 
 .containerLink{
+  background-color: aliceblue;
   display: flex;
-  gap: 25px
+  gap: 25px;
+  border-radius: 10p;
+  padding: 6px 40px;
+  box-shadow: 3px 3px 3px rgb(121, 144, 144);
 }
