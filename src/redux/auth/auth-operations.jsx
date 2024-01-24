@@ -1,7 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-axios.defaults.baseURL = 'https://connections-api.herokuapp.com/';
+axios.defaults.baseURL = 'https://connections-api.herokuapp.com';
 
 const token = {
   set(token) {
@@ -16,11 +16,11 @@ export const register = createAsyncThunk(
   'auth/register',
   async (credentials, thunkAPI) => {
     try {
-      const res = await axios.post('users/signup', credentials);
+      const res = await axios.post('/users/signup', credentials);
        console.log(res);
       token.set(res.token);
 
-      return res;
+      return res.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
     }
@@ -33,7 +33,7 @@ export const login = createAsyncThunk(
     try {
       const res = await axios.post('/users/login', credentials);
       token.set(res.data.token);
-      return res;
+      return res.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
     }
@@ -46,7 +46,7 @@ export const logout = createAsyncThunk(
     try {
       const res = await axios.post('/users/logout');
       token.unset();
-      return res;
+      return res.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
     }
@@ -58,7 +58,6 @@ export const refreshUser = createAsyncThunk(
   async (_, thunkAPI) => {
     const state = thunkAPI.getState();
     const persistedToken = state.auth.token;
-
     if (persistedToken === null) {
       return thunkAPI.rejectWithValue('Unable to fetch user');
     }

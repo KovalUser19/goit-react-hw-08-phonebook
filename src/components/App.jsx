@@ -26,12 +26,11 @@ export const App = () => {
     <b>Refreshining user...</b>
   ) : (
       <Routes>
-        {console.log('Current location:', window.location.pathname)}
       <Route path="/" element={<Layout/>}>
         <Route index element={<Home />}/>
-          <Route path="/register" element={<RestrictedRoute redirectTo="/contacts" component={<Register/>} />} />
+          <Route path="/register" element={<RestrictedRoute redirectTo="/register" component={<Register/>} />} />
           <Route path="/login" element={<RestrictedRoute redirectTo="/contacts" component={<Login />} />} />
-          <Route path="/contacts" element={<PrivateRoute redirectTo="/login" component={<Contacts/>} />}/>
+          <Route path="/contacts" element={<PrivateRoute redirectTo="/" component={<Contacts/>} />}/>
         </Route>
         <Route path="*" element={<h1>Error</h1>} />
     </Routes>

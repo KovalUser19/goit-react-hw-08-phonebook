@@ -1,11 +1,27 @@
 .items{
   display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  margin: 0 auto;
   flex-direction: column;
   gap: 7px;
+
+ width: 400px;
 }
 
-.button{
+.buttonDelete{
+  border: none;
   margin-left: 10px;
   border-radius: 5px;
-  border: 1px solid gray;
+  background-color: aliceblue;
+    box-shadow: 0px 0px 3px rgb(121, 144, 144);
+}
+
+.contactList{
+  text-align: start;
+}
+.buttonDelete:hover{
+  color: #4b77c5;
+    cursor: pointer;
+    font-size: 16px;
 }

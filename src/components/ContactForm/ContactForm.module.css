@@ -1,16 +1,22 @@
 .formWrapper {
+  width: 400px;
   display: flex;
   flex-direction: column;
-  width: 400px;
   gap: 10px;
-  border: 1px solid black;
-  padding: 5px 0 10px 10px;
+  box-shadow: 0 0 5px rgba(77, 72, 72, 0.5);
+  padding: 30px;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 50px;
 }
 
 .input {
-  width: 200px;
-  height: 20px;
-  border: 1px solid lightgray;
+  padding-left: 10px;
+  border: none;
+  height: 30px;
+  box-shadow: 0 0 5px rgba(77, 72, 72, 0.5);
+  font-size: 17px;
+  border-radius: 5px;
 }
 
  .input:focus {
@@ -20,13 +26,29 @@
 
 .button {
   margin-top: 20px;
-  display: inline;
-  width: 100px;
-  height: 40px;
+  cursor: pointer;
   border-radius: 5px;
+  border: none;
+  height: 40px;
+  width: 100%;
+  font-size: 18px;
+  color: aliceblue;
+  background-color: #bae5f6;
+  font-weight: 700;
+  padding: 5px 10px;
+  box-shadow: 4px 4px 4px rgb(121, 144, 144);
+  transition: all 0.3s;
+  background: linear-gradient(to left, #92dbf8 0%, #cea3fa 50%, #98d7fa 100%);
 }
 
 button:hover {
-  background-color: rgb(178, 220, 220);
+
   box-shadow: 5px 5px 5px rgb(28, 33, 33);
+}
+.contactsForm{
+  margin-bottom: 40px;
+}
+.contactsItem{
+  text-align: center;
+  color: rgb(140, 206, 227);
 }
