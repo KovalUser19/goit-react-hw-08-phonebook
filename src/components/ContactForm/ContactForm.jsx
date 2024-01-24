@@ -42,9 +42,7 @@ export const ContactForm = () => {
 
   return (
     <>
-    <div className={css.contactsForm}>
-      <h1 className={css.contactsItem}>Contacts</h1>
-    </div>
+
     <form onSubmit={handleSubmit}>
       <div className={css.formWrapper}>
         <label htmlFor='nameInputId'>Name</label>
@@ -64,6 +62,9 @@ export const ContactForm = () => {
         <button className={css.button} type="submit">Add contact</button>
       </div>
       </form>
+      <div className={css.contactsForm}>
+      <h1 className={css.contactsItem}>Contacts</h1>
+    </div>
       </>
   )
 };

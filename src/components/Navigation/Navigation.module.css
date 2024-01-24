@@ -6,17 +6,17 @@
    cursor: pointer;
 }
 .linkNav{
+  font-size: 18px;
   text-align: center;
   display: inline-block;
   text-decoration: none;
-  padding: 12px;
   font-weight: 700;
   color: #2a363b;
 }
  .nav{
    display: flex;
-  border-radius: 10px;
-  padding: 6px 20px;
-  background-color: aliceblue;
-  box-shadow: 3px 3px 3px rgb(121, 144, 144);
+   border-radius: 10px;
+   padding: 10px 18px;
+   background-color: aliceblue;
+   box-shadow: 3px 3px 3px rgb(121, 144, 144);
 }

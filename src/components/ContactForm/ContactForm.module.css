@@ -7,7 +7,7 @@
   padding: 30px;
   margin: 0 auto;
   border-radius: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .input {
@@ -42,13 +42,10 @@
 }
 
 button:hover {
-
   box-shadow: 5px 5px 5px rgb(28, 33, 33);
 }
-.contactsForm{
-  margin-bottom: 40px;
-}
 .contactsItem{
+  margin-bottom: 30px;
   text-align: center;
   color: rgb(140, 206, 227);
 }

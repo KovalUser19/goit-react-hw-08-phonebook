@@ -1,35 +1,16 @@
 .inputFilter{
   padding-left: 10px;
-    border: none;
-    height: 30px;
-      width: 280px;
-
-    font-size: 17px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(16, 14, 14, 0.5);
-     /* border: 1px solid rgb(94, 160, 160);
-       box-shadow: 0px 0px 8px rgb(66, 85, 92); */
-    /* cursor: pointer;
-    border-radius: 5px;
-    border: none;
-    height: 20px;
-    width: 300px;
-    font-size: 18px;
-    color: aliceblue;
-    background-color: #bae5f6;
-    font-weight: 700;
-    padding: 5px 10px;
-    box-shadow: 4px 4px 4px rgb(121, 144, 144);
-    transition: all 0.3s;
-    background: linear-gradient(to left, #92dbf8 0%, #cea3fa 50%, #98d7fa 100%); */
+  border: none;
+  height: 30px;
+  width: 260px;
+  font-size: 17px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(16, 14, 14, 0.5);
 }
 .filterContainer{
   margin-bottom: 20px;
- display: flex;
- align-items: center;
- justify-content: center;
- gap: 10px;
-}
-.filterLabel{
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }

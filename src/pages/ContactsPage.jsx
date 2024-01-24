@@ -5,6 +5,14 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchContacts } from "../redux/operation";
 import { selectError, selectIsLoading } from "../redux/selectors";
+const styles = {
+  loadTitle: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+}
+}
+
 
 const ContactsPage = () => {
   const dispatch = useDispatch();
@@ -18,7 +26,7 @@ const ContactsPage = () => {
    <>
        <ContactForm />
        <Filter />
-          {isLoading && !error && <b>Loading...</b>}
+          {isLoading && !error && <b style={styles.loadTitle} >Loading...</b>}
         <ContactList />
      </>
    )
